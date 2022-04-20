@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kamen / Papir / Makaze - Nemanja Radivojevic</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="app">
+        <div id="score">
+            <span class="title">Kamen<br />Papir<br />Makaze</span>
+            <div id="score-display">
+                <div id="score-result">
+                    <h4>Čovek</h4>
+                    <span id="show-person-counter">0</span>
+                </div>
+                <div id="score-result">
+                    <h4>Računar</h4>
+                    <span id="show-computer-counter">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="first-game-part">
+            <div class="two-box">
+                <div class="button one" id="rock">
+                    <img src="img/rock.png" alt="Rock">
+                </div>
+                <div class="button two" id="paper">
+                    <img src="img/paper.png" alt="Paper">
+                </div>
+            </div>
+            <div class="one-box">
+                <div class="button three" id="scissors">
+                    <img src="img/scissors.png" alt="Scissors">
+                </div>
+            </div>
+        </div>
+
+        <div id="second-game-part">
+            <div class="choice choice-one">
+                <h4>ČOVEK</h4>
+                <div class="button" id="person-color">
+                    <img src="img/rock.png" alt="" id="person">
+                </div>
+            </div>
+            <div class="choice choice-two">
+                <h3 class="result-show" id="result"></h3>
+                <button class="play-again" id="play-again">IGRAJ PONOVO</button>
+                <button class="reset-result" id="reset-score">RESTARTUJ REZULTAT</button>
+            </div>
+            <div class="choice choice-three">
+                <h4>RAČUNAR</h4>
+                <div class="button" id="computer-color">
+                    <img src="img/rock.png" alt="" id="computer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
